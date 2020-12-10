@@ -1,0 +1,35 @@
+﻿<Window x:Class="AutoGameTest.StartMenu"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AutoGameTest"
+        mc:Ignorable="d"
+        Title="StartMenu" Height="526.8" Width="733.587" Closed="Window_Closed">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2.5*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <TextBlock Grid.Column="1" FontSize="50" HorizontalAlignment="Center" VerticalAlignment="Center" Text="卒業制作ゲーム"/>
+        <Button Content="ゲームスタート" Grid.Column="1" Grid.Row="2" FontSize="20" Margin="10" Width="120" Click="Button_Click"/>
+        <Button Content="ランキング" Grid.Column="1" Grid.Row="3" FontSize="20" Margin="10" Width="120"/>
+        <Button Content="終了" x:Name="BtEnd" Grid.Column="2" Grid.Row="3" HorizontalAlignment="Right" Margin="5" Width="50" Click="BtEnd_Click"/>
+        <Grid Grid.Row="1" Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <TextBlock VerticalAlignment="Center" Text="キャラクター名を入力してからゲームスタート" FontSize="20" HorizontalAlignment="Center"/>
+            <TextBox x:Name="PlayerNameText" Grid.Row="1" Height="30" FontSize="20" Width="260" HorizontalAlignment="Left"/>
+            <Button Grid.Row="1" Height="30" Width="90" FontSize="20" Content="ランダム" HorizontalAlignment="Right" Click="Button_Click_1"/>
+        </Grid>
+    </Grid>
+</Window>

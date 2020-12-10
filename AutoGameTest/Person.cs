@@ -64,6 +64,51 @@ namespace AutoGameTest {
                         EquipskillList[i] = skill;
                     }
                     break;
+                case 100:
+                    Name = name;
+                    HP = 100;
+                    ATK = 10;
+                    AGI = 100;
+                    STR = 10;
+                    DEX = 10;
+                    INT = 10;
+                    FAI = 10;
+                    EquipskillList[0] = new InstanceSkill(1);
+                    for (int i = 1; i < 5; i++) {
+                        InstanceSkill skill = new InstanceSkill(-1);
+                        EquipskillList[i] = skill;
+                    }
+                    for (int i = -1; i < 6; i++) {
+                        InstanceSkill skill = new InstanceSkill(i);
+                        GetSkillList.Add(skill);
+                    }
+                    for (int i = 0; i < 4; i++) {
+                        TimerSkill skill = new TimerSkill(i);
+                        GetSkillList.Add(skill);
+                    }
+                    break;
+                case 101:
+                    Name = "すごくわるいやつ";
+                    HP = 100;
+                    ATK = 10;
+                    AGI = 100;
+                    STR = 10;
+                    DEX = 10;
+                    INT = 10;
+                    FAI = 10;
+                    for (int i = 0; i < 5; i++) {
+                        InstanceSkill skill = new InstanceSkill(-1);
+                        EquipskillList[i] = skill;
+                    }
+                    for (int i = -1; i < 6; i++) {
+                        InstanceSkill skill = new InstanceSkill(i);
+                        GetSkillList.Add(skill);
+                    }
+                    for (int i = 0; i < 4; i++) {
+                        TimerSkill skill = new TimerSkill(i);
+                        GetSkillList.Add(skill);
+                    }
+                    break;
             }
         }
 

@@ -62,8 +62,17 @@
     <Compile Include="Skills\InstanceSkill.cs" />
     <Compile Include="Skills\Skill.cs" />
     <Compile Include="Skills\TimerSkill.cs" />
+    <Compile Include="StartMenu.xaml.cs">
+      <DependentUpon>StartMenu.xaml</DependentUpon>
+    </Compile>
     <Compile Include="StatusSetting.xaml.cs">
       <DependentUpon>StatusSetting.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TutorialBattle.xaml.cs">
+      <DependentUpon>TutorialBattle.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TutorialStatusSet.xaml.cs">
+      <DependentUpon>TutorialStatusSet.xaml</DependentUpon>
     </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -81,7 +90,19 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="StartMenu.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="StatusSetting.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="TutorialBattle.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="TutorialStatusSet.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

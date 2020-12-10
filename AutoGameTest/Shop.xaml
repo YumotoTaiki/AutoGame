@@ -8,11 +8,45 @@
         Title="Shop" Height="450" Width="800">
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="2*"/>
-            <ColumnDefinition Width="2*"/>
-            <ColumnDefinition Width="2*"/>
-            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="1.4*"/>
+            <ColumnDefinition Width="4.5*"/>
+            <ColumnDefinition Width="0.5*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="1.5*"/>
         </Grid.ColumnDefinitions>
-        <Button Content="もどる" Grid.Column="3" Click="Button_Click"/>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="2*"/>
+        </Grid.RowDefinitions>
+        <TextBlock Grid.Row="0" Grid.Column="0" Text="スキル名" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        <TextBlock Grid.Row="3" Grid.Column="4" Text="所持金:200G" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        <TextBlock Grid.Row="0" Grid.Column="1" Text="スキル効果" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        <TextBlock Grid.Row="0" Grid.Column="2" Text="値段" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        <TextBlock x:Name="TxProductName1" Grid.Row="1" Grid.Column="0" Text="名前" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        <TextBlock x:Name="TxProductName2" Grid.Row="2" Grid.Column="0" Text="名前" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        <TextBlock x:Name="TxProductName3" Grid.Row="3" Grid.Column="0" Text="名前" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        <TextBlock x:Name="TxProductName4" Grid.Row="4" Grid.Column="0" Text="名前" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        <TextBlock x:Name="TxProductName5" Grid.Row="5" Grid.Column="0" Text="名前" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        <TextBlock x:Name="TxProductEffect1" Grid.Row="1" Grid.Column="1" Text="効果" FontSize="15" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        <TextBlock x:Name="TxProductEffect2" Grid.Row="2" Grid.Column="1" Text="効果" FontSize="15" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        <TextBlock x:Name="TxProductEffect3" Grid.Row="3" Grid.Column="1" Text="効果" FontSize="15" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        <TextBlock x:Name="TxProductEffect4" Grid.Row="4" Grid.Column="1" Text="効果" FontSize="15" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        <TextBlock x:Name="TxProductEffect5" Grid.Row="5" Grid.Column="1" Text="効果" FontSize="15" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        <TextBlock x:Name="TxProductPrice1" Grid.Row="1" Grid.Column="2" Text="価格" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        <TextBlock x:Name="TxProductPrice2" Grid.Row="2" Grid.Column="2" Text="価格" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        <TextBlock x:Name="TxProductPrice3" Grid.Row="3" Grid.Column="2" Text="価格" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        <TextBlock x:Name="TxProductPrice4" Grid.Row="4" Grid.Column="2" Text="価格" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        <TextBlock x:Name="TxProductPrice5" Grid.Row="5" Grid.Column="2" Text="価格" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        <Button x:Name="btBuy1" Content="購入" Grid.Row="1" Grid.Column="3" Click="Button_Click1" Width="80" Height="30"/>
+        <Button x:Name="btBuy2" Content="購入" Grid.Row="2" Grid.Column="3" Click="Button_Click2" Width="80" Height="30"/>
+        <Button x:Name="btBuy3" Content="購入" Grid.Row="3" Grid.Column="3" Click="Button_Click3" Width="80" Height="30"/>
+        <Button x:Name="btBuy4" Content="購入" Grid.Row="4" Grid.Column="3" Click="Button_Click4" Width="80" Height="30"/>
+        <Button x:Name="btBuy5" Content="購入" Grid.Row="5" Grid.Column="3" Click="Button_Click5" Width="80" Height="30"/>
+        <Button x:Name="btProductChange" Content="商品入れ替え" Grid.Row="4" Grid.Column="4" Click="btProductChange_Click" Width="80" Height="50"/>
+        <Button x:Name="btReturn" Content="もどる" Grid.Row="5" Grid.Column="4" Click="btReturn_Click" Width="80" Height="50"/>
     </Grid>
 </Window>
